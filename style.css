@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background-color: #a3a380;
+  background-color: #eadac3;
   padding: 20px;
   color: #fff;
 }
@@ -31,17 +31,57 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #56504e;
   text-decoration: none;
   font-weight: bold;
 }
 
+nav ul li a:hover {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-right: auto;
+  color: #8b8d00;
+}
+
+.logo img {
+  width: 75px;
+  height: 75px;
+}
+
 .hero {
-  background-image: url("images/building.jpg");
+  position: relative;
+  background-image: url("images/building_crop2.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
   color: white;
   padding: 100px 0;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero h2,
+.hero p,
+.cta-button {
+  position: relative;
+  z-index: 2;
 }
 
 .hero h2 {
@@ -158,10 +198,14 @@ button.next:hover {
 }
 
 #about {
-  background-color: #a3a380;
+  background-color: #eadac3;
   padding: 50px 20px;
   margin-top: 50px;
   border-radius: 10px;
+  background-image: url("images/golden-meadow.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 250px auto;
 }
 
 #contact {
@@ -177,4 +221,8 @@ footer {
   color: #fff;
   text-align: center;
   padding: 10px;
+  background-image: url("images/logo.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
