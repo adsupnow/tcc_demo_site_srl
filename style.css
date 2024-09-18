@@ -216,6 +216,10 @@ button.next:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
+#contact ul {
+  margin: 20px 0;
+}
+
 footer {
   background-color: #333;
   color: #fff;
