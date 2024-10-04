@@ -166,6 +166,7 @@ section {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .testimonial-carousel {
   display: flex;
   transition: transform 0.5s ease-in-out;
@@ -229,4 +230,83 @@ footer {
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .logo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .section-alternating {
+    flex-direction: column;
+  }
+
+  .text,
+  .image {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .carousel-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .testimonial-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .testimonial {
+    flex: 0 0 33.33%;
+    box-sizing: border-box;
+  }
+
+  #about {
+    background-size: 100px auto;
+    text-align: center;
+  }
+
+  #contact form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contact form label,
+  #contact form input,
+  #contact form textarea,
+  #contact form button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    background-size: 50px auto;
+    background-position: center;
+  }
 }

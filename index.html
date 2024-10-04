@@ -201,8 +201,8 @@
         } else if (currentIndex >= totalTestimonials) {
           currentIndex = 0;
         }
-
-        carousel.style.transform = `translateX(-${currentIndex * 33}%)`;
+        percentage = 100 / totalTestimonials;
+        carousel.style.transform = `translateX(-${currentIndex * percentage}%)`;
       }
     </script>
 
