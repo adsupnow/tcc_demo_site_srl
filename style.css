@@ -207,6 +207,7 @@ button.next:hover {
   background-position: left;
   background-repeat: no-repeat;
   background-size: 250px auto;
+  white-space: pre-line;
 }
 
 #contact {
@@ -289,7 +290,9 @@ footer {
 
   #about {
     background-size: 100px auto;
+    background-position: top left;
     text-align: center;
+    white-space: normal;
   }
 
   #contact form {
